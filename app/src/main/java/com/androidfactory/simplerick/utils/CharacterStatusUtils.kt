@@ -6,7 +6,9 @@ import com.androidfactory.network.models.domain.CharacterStatus
 fun CharacterStatus.asColor(): Color {
     return when (this) {
         CharacterStatus.Alive -> Color.Green
+
         CharacterStatus.Dead -> Color.Red
+
         CharacterStatus.Unknown -> Color.Yellow
     }
 }

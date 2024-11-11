@@ -42,7 +42,7 @@ fun AllEpisodesScreen(
 
     when (val state = uiState) {
         AllEpisodesUiState.Error -> {
-            // todo
+
         }
 
         AllEpisodesUiState.Loading -> LoadingState()
