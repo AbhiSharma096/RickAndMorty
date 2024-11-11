@@ -113,6 +113,8 @@ class KtorClient {
                 listOf(it)
             }
         } else {
+
+            // for calling multiple episodes at once, we need to join the ids with a comma
             val idsCommaSeparated = episodeIds.joinToString(separator = ",")
             safeApiCall {
                 client.get("episode/$idsCommaSeparated")
