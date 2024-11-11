@@ -27,9 +27,7 @@ The application follows a multi-module architecture to separate concerns and inc
 
 1. **App Module**: The main module that depends on other feature modules and is responsible for bootstrapping the app.
 2. **Network Module**: Contains all the networking code including Retrofit setup, API interface definitions, and network response handling.
-3. **Character Module**: Handles UI and business logic related to displaying characters, character details, and related data.
-4. **Episode Module**: Manages data and UI for episodes.
-5. **Location Module**: Manages data and UI for locations.
+
 
 ## Key Components and Practices
 
