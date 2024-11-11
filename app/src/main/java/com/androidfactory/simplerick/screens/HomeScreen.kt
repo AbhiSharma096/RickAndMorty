@@ -66,7 +66,10 @@ fun HomeScreen(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                     columns = GridCells.Fixed(2),
                     content = {
+
+
                         items(
+
                             items = state.characters,
                             key = { it.id }
                         ) { character ->
