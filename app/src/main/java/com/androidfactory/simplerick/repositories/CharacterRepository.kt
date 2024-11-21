@@ -4,6 +4,7 @@ import com.androidfactory.network.ApiOperation
 import com.androidfactory.network.KtorClient
 import com.androidfactory.network.models.domain.Character
 import com.androidfactory.network.models.domain.CharacterPage
+import kotlinx.coroutines.delay
 import javax.inject.Inject
 
 class CharacterRepository @Inject constructor(private val ktorClient: KtorClient) {
@@ -11,6 +12,7 @@ class CharacterRepository @Inject constructor(private val ktorClient: KtorClient
         page: Int,
         params: Map<String, String> = emptyMap()
     ): ApiOperation<CharacterPage> {
+        //delay(1000)
         return ktorClient.getCharacterByPage(pageNumber = page, queryParams = params)
     }
 

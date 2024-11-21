@@ -49,6 +49,9 @@ class SearchViewModel @Inject constructor(
         }
     }
 
+
+
+
     private val _uiState = MutableStateFlow<ScreenState>(ScreenState.Empty)
     val uiState = _uiState.asStateFlow()
 
@@ -104,5 +107,7 @@ class SearchViewModel @Inject constructor(
         }.onFailure { exception ->
             _uiState.update { ScreenState.Error("No search results found") }
         }
+
+
     }
 }
